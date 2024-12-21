@@ -1,10 +1,11 @@
-//wrapping multiple components using div tag
+//Div is not the good way to wrap instead of that we will use React.Fragment
+import React from "react"
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Hello/>
       <WelcomeMsg/>
-    </div>
+    </React.Fragment>
   )
 }
 function Hello (){
