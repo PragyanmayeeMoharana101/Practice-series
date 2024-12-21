@@ -1,4 +1,4 @@
-// creating and acessing a function in component
+//acessing formula in component
 const name = "ram";
 const age = 20;
 const height = 5.4;
@@ -18,6 +18,7 @@ function Hello (){
             })}
         </h1>
         <h2>{message()}</h2>
+        <h2>totak rating = {20+10}</h2>
         </>
     ) 
 }
