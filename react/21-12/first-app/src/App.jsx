@@ -1,4 +1,7 @@
-//we can also use <> </> to wrap multiple components
+//making diffrent files for each components
+
+import Hello from "./Hello"
+import WelcomeMsg from "./WelcomeMsg"
 
 function App() {
   return (
@@ -8,10 +11,5 @@ function App() {
     </>
   )
 }
-function Hello (){
-  return <h1>Hello World</h1>
-}
-function WelcomeMsg(){
-  return <h1>Welcome to React</h1>
-}
+
 export default App
