@@ -1,7 +1,7 @@
-//making diffrent files for each components
+//creating separate folder for components
 
-import Hello from "./Hello"
-import WelcomeMsg from "./WelcomeMsg"
+import Hello from "./components/Hello"
+import WelcomeMsg from "./components/WelcomeMsg"
 
 function App() {
   return (
