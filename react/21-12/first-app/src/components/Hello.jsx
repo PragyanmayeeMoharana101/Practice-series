@@ -1,21 +1,42 @@
-//creating and acessing nested object in component
+//creating and acessing object inside array in component
 function Hello (){
-    const student ={
-        name : "ram",
-        age : 20,
-        height: 5.4,
-        address: {
-            city: "sambalpur",
-            state: "odisha",
-            pincode: 768002
+    const student =[
+        {
+            name : "ram",
+            age : 20,
+            height: 5.4,
+            address: {
+                city: "sambalpur",
+                state: "odisha",
+                pincode: 768002
+            }
+        },
+        {
+            name : "shyam",
+            age : 22,
+            height: 5.5,
+            address: {
+                city: "sonepur",
+                state: "odisha",
+                pincode: 768748
+            }
+        },
+        {
+            name : "akash",
+            age : 21,
+            height: 5.3,
+            address: {
+                city: "bargarh",
+                state: "odisha",
+                pincode: 764352
+            }
         }
-    }
+    ]
     return (
         <>
-        <h1>Hello my friend {student.name}</h1>
-        <h1>you are {student.age} years old</h1>
-        <h1>you are {student.height} feet tall</h1>
-        <h1>you are living at {student.address.city}, {student.address.state}, {student.address.pincode} </h1>
+         {student.map((stud)=>{
+            return <h4> name = {stud.name} , age = {stud.age}, height = {stud.height}, address = {stud.address.city}, {stud.address.state} , {stud.address.pincode}  </h4>
+         })}
         </>
     ) 
 }
