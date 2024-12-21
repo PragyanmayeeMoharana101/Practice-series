@@ -1,8 +1,11 @@
-// creating and acessing array in component
+// creating and acessing a function in component
 const name = "ram";
 const age = 20;
 const height = 5.4;
 const hobbies = ["reading books", "painting"]
+function message(){
+    return "good luck for your react career"
+}
 function Hello (){
     return (
         <>
@@ -14,6 +17,7 @@ function Hello (){
                 return <span> "{hobby}" ,</span>
             })}
         </h1>
+        <h2>{message()}</h2>
         </>
     ) 
 }
